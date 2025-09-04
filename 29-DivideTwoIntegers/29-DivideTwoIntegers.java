@@ -1,4 +1,4 @@
-// Last updated: 9/4/2025, 10:35:43 AM
+// Last updated: 9/4/2025, 10:39:30 AM
 class Solution {
     public int divide(int dividend, int divisor) {
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
@@ -14,8 +14,8 @@ class Solution {
 
             // Double divisor until it exceeds a
             while (a >= (temp << 1)) {
-                temp <<= 1;
-                multiple <<= 1;
+                temp *= 2; //temp <<= 1
+                multiple *= 2; // multiple <<= 1
             }
 
             // Subtract largest chunk
